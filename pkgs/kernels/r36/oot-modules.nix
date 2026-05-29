@@ -27,8 +27,11 @@ let
         ./patches/nvidia-oot/0001-rtl8822ce-Fix-Werror-address.patch
         ./patches/nvidia-oot/0002-sound-Fix-include-path-for-tegra-virt-alt-include.patch
         ./patches/nvidia-oot/0003-Fix-conftest-use-with-gcc15.patch
+      ] ++ lib.optionals (lib.versionAtLeast l4tMajorMinorPatchVersion "36.5") [
+        # rtl8852ce driver was introduced in L4T 36.5; these patches only apply there.
         ./patches/nvidia-oot/0004-rtl8852e-Fix-conflicting-types.patch
         ./patches/nvidia-oot/0005-Fix-header-guard-in-halfrf_ops_rtl8852c.h.patch
+        # crypto-tegra backport targets the 36.5 source layout.
         ./patches/nvidia-oot/0001-crypto-tegra-Disable-softirqs-before-finalizing-requ.patch
       ];
     };
