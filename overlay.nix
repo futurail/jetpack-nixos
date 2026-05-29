@@ -38,7 +38,7 @@ in
 
       # nix build .#nvidia-jetpack6.l4t-3d-core.src; find
       # libnvidia-ptxjitcompiler.so and use that.
-      cudaDriverMajorMinorVersion = "540.5.0";
+      cudaDriverMajorMinorVersion = "540.4.0";
 
       bspHash = "sha256-ps4RwiEAqwl25BmVkYJBfIPWL0JyUBvIcU8uB24BDzs=";
       bspPostPatch =

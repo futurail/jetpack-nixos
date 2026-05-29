@@ -1,14 +1,14 @@
 {
   "nvidia-l4t-3d-core": [
     "/usr/lib/aarch64-linux-gnu/nvidia/libGLX_nvidia.so.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-eglcore.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glcore.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glsi.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glvkspirv.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-gpucomp.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-nvvm.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-ptxjitcompiler.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-rtcore.so.540.5.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-eglcore.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glcore.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glsi.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-glvkspirv.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-gpucomp.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-nvvm.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-ptxjitcompiler.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-rtcore.so.540.4.0",
     "/usr/lib/aarch64-linux-gnu/nvidia/nvidia_icd.json",
     "/usr/lib/aarch64-linux-gnu/tegra-egl/",
     "/usr/lib/aarch64-linux-gnu/tegra-egl/ld.so.conf",
@@ -62,8 +62,8 @@
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvgov_spincircle.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvgov_tbc.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvgov_ui.so",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-rmapi-tegra.so.540.5.0",
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-tls.so.540.5.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-rmapi-tegra.so.540.4.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-tls.so.540.4.0",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvimp.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvisp_utils.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvos.so",
@@ -247,7 +247,7 @@
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvscisync.so"
   ],
   "nvidia-l4t-openwfd": [
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-kms.so.540.5.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-kms.so.540.4.0",
     "/usr/lib/aarch64-linux-gnu/nvidia/libtegrawfd.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-kms.so"
   ],
@@ -258,7 +258,7 @@
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvplayfair.so"
   ],
   "nvidia-l4t-vulkan-sc": [
-    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-vksc-core.so.540.5.0",
+    "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-vksc-core.so.540.4.0",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-vksc-core.so",
     "/usr/lib/aarch64-linux-gnu/nvidia/libnvidia-vksc-core.so.1"
   ],
