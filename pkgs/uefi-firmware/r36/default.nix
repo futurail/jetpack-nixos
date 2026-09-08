@@ -26,15 +26,20 @@ let
   };
   repos = {
     edk2 = {
-      sha256 = "sha256-4zFyQ4g+oJp9kkSamx11bfDMRY+9g6Vzsuau9ozC/R0=";
+      sha256 = "sha256-TBroMmFyZt6ypooDtSzScjA3POPr76rJKfLQfAkRwdU=";
       fetchSubmodules = true;
     };
-    edk2-platforms.sha256 = "sha256-PsKxy/tiRl2/qcL/JQNXbUPsnWekAQ+4b+NiccSRGa4=";
-    edk2-non-osi.sha256 = "sha256-Dj6Og/sc3MEMU/37rUMu7miHOvFi3Qvfkm+nMSUBUF0=";
-    edk2-infineon.sha256 = "sha256-47UJfEd4ViTenx5dvy2G75NFSgmcsyIWpN0Lv1QlvA8=";
-    edk2-redfish-client.sha256 = "sha256-EUWi5z+1sz2zMZM6x/sqE2NvdHRkQwQOcotsUwELsBY=";
-    edk2-nvidia.sha256 = "sha256-CW1tDcNxA0uod4fmJq3jx1zp+AmS7/akY14zF2LyF4g=";
-    edk2-nvidia-non-osi.sha256 = "sha256-bb5pb2nF6Ht5UpTt7Kv2lP46T+MttmgzFCJGd5xnrXs=";
+    edk2-platforms.sha256 = "sha256-27dKEi66UWBgJi3Sb2/naeeSC2CJ5+Dbtw8e0o5Y/Hg=";
+    edk2-non-osi.sha256 = "sha256-FnznH8KsB3rD7sL5Lx2GuQZRPZ+uqAYqenjk+7x89mE=";
+    # NVIDIA never tagged r36.4.4 here; r36.5 is its oldest r36 tag, so this component alone stays
+    # a version ahead of the rest of the firmware set.
+    edk2-infineon = {
+      rev = "r36.5";
+      sha256 = "sha256-47UJfEd4ViTenx5dvy2G75NFSgmcsyIWpN0Lv1QlvA8=";
+    };
+    edk2-redfish-client.sha256 = "sha256-bnacZZLHc9zavC4uc+LfM4mj5DbajTdfovVnIPYEb1o=";
+    edk2-nvidia.sha256 = "sha256-eTX+/B6TtpYyeoeQxJcoN2eS+Mh4DtLthabW7p7jzYQ=";
+    edk2-nvidia-non-osi.sha256 = "sha256-5BjT7kZqU8ek9GC7f1KuomC2JYyWWFMawrZN2CPHGjY=";
   };
 
   fetchRepo = name: value: fetchFromGitHub (defaultOrigin // { inherit name; repo = name; } // value);
